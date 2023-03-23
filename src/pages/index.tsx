@@ -15,8 +15,8 @@ export default function Index() {
           <h1>
             We're concerned about the situation in Punjab.<span className="fancy">.</span>
           </h1>
-         <span className="handle">@punjabactivism</span>
-         <div>Punjab Activism is a website that provides a platform for activists and concerned citizens to raise awareness about human rights abuses and political unrest in Punjab. The website catalogues news links, websites, graphics, and videos related to the current situation in Punjab, including mass arrests and internet blackouts. Punjab Activism also offers resources and tools for activists to take action, such as petition templates, contact information for elected officials, and information on how to organize protests and demonstrations. The goal of Punjab Activism is to create a space for people to come together and advocate for a more just and equitable society in Punjab.</div> 
+          <p className="description">PunjabActivism.com is a platform dedicated to raising awareness about the human rights abuses and political unrest in Punjab, India. We provide resources and tools for activists and advocates fighting against mass arrests, internet blackouts, and other forms of oppression in the region. Our mission is to amplify the voices of those who are fighting for justice and to support the movement for a more equitable and free Punjab.</p>
+          <span className="handle">@punjabactivism</span>
           <SocialList />
         </div>
       </div>
@@ -55,6 +55,9 @@ export default function Index() {
           h2 {
             font-size: 2.25rem;
           }
+          .description {
+            font-size: 1.5rem;
+          }        
         }
       `}</style>
     </Layout>
