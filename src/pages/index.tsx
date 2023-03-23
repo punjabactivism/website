@@ -16,7 +16,7 @@ export default function Index() {
             We're concerned about the situation in Punjab.<span className="fancy">.</span>
           </h1>
          <span className="handle">@punjabactivism</span>
-         {/*- <p>Punjab Activism is a website that provides a platform for activists and concerned citizens to raise awareness about human rights abuses and political unrest in Punjab. The website catalogues news links, websites, graphics, and videos related to the current situation in Punjab, including mass arrests and internet blackouts. Punjab Activism also offers resources and tools for activists to take action, such as petition templates, contact information for elected officials, and information on how to organize protests and demonstrations. The goal of Punjab Activism is to create a space for people to come together and advocate for a more just and equitable society in Punjab.</p> */}
+         <div>Punjab Activism is a website that provides a platform for activists and concerned citizens to raise awareness about human rights abuses and political unrest in Punjab. The website catalogues news links, websites, graphics, and videos related to the current situation in Punjab, including mass arrests and internet blackouts. Punjab Activism also offers resources and tools for activists to take action, such as petition templates, contact information for elected officials, and information on how to organize protests and demonstrations. The goal of Punjab Activism is to create a space for people to come together and advocate for a more just and equitable society in Punjab.</div> 
           <SocialList />
         </div>
       </div>
