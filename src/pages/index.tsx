@@ -15,7 +15,7 @@ export default function Index() {
           <h1>
             We're concerned about the situation in Punjab.<span className="fancy">.</span>
           </h1>
-          <p className="description">PunjabActivism.com is a platform dedicated to raising awareness about the human rights abuses and political unrest in Punjab, India. We provide resources and tools for activists and advocates fighting against mass arrests, internet blackouts, and other forms of oppression in the region. Our mission is to amplify the voices of those who are fighting for justice and to support the movement for a more equitable and free Punjab.</p>
+          {/* <p className="description">PunjabActivism.com is a platform dedicated to raising awareness about the human rights abuses and political unrest in Punjab, India. We provide resources and tools for activists and advocates fighting against mass arrests, internet blackouts, and other forms of oppression in the region. Our mission is to amplify the voices of those who are fighting for justice and to support the movement for a more equitable and free Punjab.</p> */}
           <span className="handle">@punjabactivism</span>
           <SocialList />
         </div>
