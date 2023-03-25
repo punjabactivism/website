@@ -17,6 +17,17 @@ export default function Navigation() {
             </Link>
           </li>
           <li>
+            <Link href="/posts/references">
+              <a
+                className={
+                  router.pathname.startsWith("/posts") ? "active" : null
+                }
+              >
+                human rights records
+              </a>
+            </Link>
+          </li>
+          <li>
             <Link href="/posts/tags/news">
               <a
                 className={
@@ -26,18 +37,7 @@ export default function Navigation() {
                 news
               </a>
             </Link>
-          </li>
-          <li>
-            <Link href="/posts">
-              <a
-                className={
-                  router.pathname.startsWith("/posts") ? "active" : null
-                }
-              >
-                blog
-              </a>
-            </Link>
-          </li>
+          </li>          
           <li>
             <Link href="/posts/accounts">
               <a
@@ -46,6 +46,17 @@ export default function Navigation() {
                 }
               >
                 social media
+              </a>
+            </Link>
+          </li>  
+          <li>
+            <Link href="/posts">
+              <a
+                className={
+                  router.pathname.startsWith("/posts") ? "active" : null
+                }
+              >
+                blog
               </a>
             </Link>
           </li>          
