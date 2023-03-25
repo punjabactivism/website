@@ -27,6 +27,17 @@ export default function Navigation() {
               </a>
             </Link>
           </li>
+          <li>
+            <Link href="/posts">
+              <a
+                className={
+                  router.pathname.startsWith("/social") ? "active" : null
+                }
+              >
+                social media
+              </a>
+            </Link>
+          </li>          
         </ul>
         <style jsx>
           {`
