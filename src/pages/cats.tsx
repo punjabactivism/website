@@ -24,7 +24,6 @@ export default function Index({ tags, pagination }: Props) {
       <BasicMeta url={url} title={title} />
       <OpenGraphMeta url={url} title={title} />
       <TwitterCardMeta url={url} title={title} />
-      <PostList tags={tags} pagination={pagination} />
     </Layout>
   );
 }
