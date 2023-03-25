@@ -10,7 +10,6 @@ import { listTags, TagContent } from "../lib/tags";
 import Head from "next/head";
 
 type Props = {
-  posts: PostContent[];
   tags: TagContent[];
   pagination: {
     current: number;
@@ -25,13 +24,12 @@ export default function Index({ posts, tags, pagination }: Props) {
       <BasicMeta url={url} title={title} />
       <OpenGraphMeta url={url} title={title} />
       <TwitterCardMeta url={url} title={title} />
-      <PostList posts={posts} tags={tags} pagination={pagination} />
+      <PostList tags={tags} pagination={pagination} />
     </Layout>
   );
 }
 
 export const getStaticProps: GetStaticProps = async () => {
-  const posts = listPostContent(1, config.posts_per_page);
   const tags = listTags();
   const pagination = {
     current: 1,
@@ -39,7 +37,6 @@ export const getStaticProps: GetStaticProps = async () => {
   };
   return {
     props: {
-      posts,
       tags,
       pagination,
     },
