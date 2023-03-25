@@ -3,7 +3,7 @@ import BasicMeta from "../components/meta/BasicMeta";
 import OpenGraphMeta from "../components/meta/OpenGraphMeta";
 import TwitterCardMeta from "../components/meta/TwitterCardMeta";
 import { SocialList } from "../components/SocialList";
-import { CatList } from "../components/CatList";
+import CatList from "../components/CatList";
 
 export default function Index() {
   return (
