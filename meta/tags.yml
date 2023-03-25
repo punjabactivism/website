@@ -3,3 +3,5 @@ tags:
     name: document
   - slug: links
     name: links
+  - slug: news
+    name: News
