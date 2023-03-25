@@ -9,7 +9,7 @@ type Props = {
   tags: TagContent[];
 };
 
-export default function Index() {
+export default function Index({ tags }: Props) {
   return (
     <Layout>
       <BasicMeta url={"/"} />
