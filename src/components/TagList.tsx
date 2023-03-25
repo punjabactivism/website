@@ -6,14 +6,13 @@ import Pagination from "./Pagination";
 import { TagContent } from "../lib/tags";
 
 type Props = {
-  posts: PostContent[];
   tags: TagContent[];
   pagination: {
     current: number;
     pages: number;
   };
 };
-export default function PostList({ posts, tags, pagination }: Props) {
+export default function PostList({ tags, pagination }: Props) {
   return (
     <div className={"container"}>
       <ul className={"categories"}>
