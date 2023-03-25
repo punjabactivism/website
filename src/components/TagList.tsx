@@ -2,17 +2,12 @@ import React from "react";
 import { PostContent } from "../lib/posts";
 import PostItem from "./PostItem";
 import TagLink from "./TagLink";
-import Pagination from "./Pagination";
 import { TagContent } from "../lib/tags";
 
 type Props = {
   tags: TagContent[];
-  pagination: {
-    current: number;
-    pages: number;
-  };
 };
-export default function PostList({ tags, pagination }: Props) {
+export default function PostList({ tags }: Props) {
   return (
     <div className={"container"}>
       <ul className={"categories"}>
