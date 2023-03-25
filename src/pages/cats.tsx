@@ -16,7 +16,7 @@ type Props = {
     pages: number;
   };
 };
-export default function Index({ posts, tags, pagination }: Props) {
+export default function Index({ tags, pagination }: Props) {
   const url = "/posts";
   const title = "All posts";
   return (
