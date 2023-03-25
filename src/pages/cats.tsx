@@ -5,6 +5,10 @@ import TwitterCardMeta from "../components/meta/TwitterCardMeta";
 import { SocialList } from "../components/SocialList";
 import { TagContent } from "../lib/tags";
 
+type Props = {
+  tags: TagContent[];
+};
+
 export default function Index() {
   return (
     <Layout>
@@ -13,7 +17,13 @@ export default function Index() {
       <TwitterCardMeta url={"/"} />
       <div className="container">
         <div>
-          List categories here
+          <ul className={"categories"}>
+            {tags.map((it, i) => (
+              <li key={i}>
+                <TagLink tag={it} />
+              </li>
+            ))}
+          </ul>
         </div>
       </div>
       <style jsx>{`
