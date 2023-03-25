@@ -11,34 +11,22 @@ import Head from "next/head";
 
 type Props = {
   tags: TagContent[];
-  pagination: {
-    current: number;
-    pages: number;
-  };
 };
-export default function Index({ tags, pagination }: Props) {
+export default function Index({ tags }: Props) {
   const url = "/posts";
   const title = "All posts";
   return (
     <Layout>
-      <BasicMeta url={url} title={title} />
-      <OpenGraphMeta url={url} title={title} />
-      <TwitterCardMeta url={url} title={title} />
-      <TagList tags={tags} pagination={pagination} />
+      <TagList tags={tags} />
     </Layout>
   );
 }
 
 export const getStaticProps: GetStaticProps = async () => {
   const tags = listTags();
-  const pagination = {
-    current: 1,
-    pages: Math.ceil(countPosts() / config.posts_per_page),
-  };
   return {
     props: {
-      tags,
-      pagination,
+      tags
     },
   };
 };
