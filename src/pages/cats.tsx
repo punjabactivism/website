@@ -12,7 +12,7 @@ export default function Index() {
       <TwitterCardMeta url={"/"} />
       <div className="container">
         <div>
-          <CatList />
+          List categories here
         </div>
       </div>
       <style jsx>{`
