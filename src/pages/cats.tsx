@@ -19,11 +19,6 @@ export default function Index({ tags }: Props) {
       <div className="container">
         <div>
           <ul className={"categories"}>
-            {tags.map((it, i) => (
-              <li key={i}>
-                <TagLink tag={it} />
-              </li>
-            ))}
           </ul>
         </div>
       </div>
